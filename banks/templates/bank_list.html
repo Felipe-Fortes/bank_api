@@ -1,0 +1,20 @@
+<head>
+    <title>Lista de Bancos</title>
+</head>
+<body><center>
+    <h1>LISTA</h1>
+<ul>
+    <table border="1">
+        <tr>
+            <th>Código de Compensação</th>
+            <th>Nome do Banco</th>
+        </tr>
+        {% for bank in bank_data %}
+        <tr>
+            <td>{{ bank.compensation_code }}</td>
+            <td>{{ bank.name }}</td>
+        </tr>  
+        {% endfor %}
+    </table>
+</ul>
+</center></body>
